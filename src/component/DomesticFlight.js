@@ -8,8 +8,11 @@ import trainLogo from '../img/svgexport-9.svg';
 import iranoutLogo from '../img/svgexport-8.svg';
 import iraninLogo from '../img/svgexport-7.svg';
 import changeLogo from '../img/svgexport-15.svg';
+import phoneLogo from '../img/svgexport-17.svg';
 import alibabaplusLogo from '../img/alibabaplus.svg';
 import { PictureList } from "./PictureList";
+import iosLogo from '../img/logoios.png';
+import androidLogo from '../img/logoandroid.png'
 
 
 const DomesticFlight = () =>{
@@ -160,17 +163,34 @@ const DomesticFlight = () =>{
                         </div>
                    </div>
 
-                   <div style={{height:'140px',display:'flex'}}>
+                   <div className="mt-6 text-center rounded-xl w-full border-current" style={{display:'flex',height:'300px',justifyContent:'space-between'}}>
                       {
                           PictureList.map((item,i) =>{
                               return(
                                   <div>
-                                      <img src={item.url}></img>
+                                      <img  className="rounded-xl" style={{height:'270px',width:'680px'}} src={item.url}></img>
                                   </div>
                               )
                           })
                       }
     
+                   </div>
+
+                   <div className="mt-6 text-center bg-white rounded-xl w-full border-current mb-20" style={{display:'flex',justifyContent:'space-between',height:'320px'}}>
+                      <div className="background rounded-l-lg">
+                          <img className="mt-10" src="https://cdn.alibaba.ir/h/desktop/assets/images/app-mobile/app-mobile@1x.webp-09aa7fed.webp"></img>
+                      </div>
+                      <div className="textbox">
+                          <h1 className="text-xl font-bold py-3">دانلود اپلیکیشن علی‌بابا</h1>
+                          <h5>با اپلیکیشن علی‌بابا سریع‌تر و مطمئن‌تر به سفر بروید ‌</h5>
+                          <button className="bg-blue-500 rounded-xl m-10 px-12 p-3 text-white"> راهنمای دانلود<img src={phoneLogo}></img></button>
+                          <div style={{display:'flex'}}>
+                              <p> Android و iOS قابلیت نصب روی </p>
+                              <img style={{width:'25px',height:'25px'}} src={iosLogo}></img>
+                              <img style={{width:'25px',height:'25px'}} src={androidLogo}></img>
+                          </div>
+                      </div>
+                      <div></div>
                    </div>
 
                 </div>
