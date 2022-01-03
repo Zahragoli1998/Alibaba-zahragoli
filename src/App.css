@@ -18,30 +18,34 @@
   display: flex;
   justify-content: center;
   z-index: 40;
+  height: 90px;
   
 }
 .main{
   max-width: 2000px;
-  margin: 10px 150px;
+  margin:auto;
   padding: 0 50px ;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 nav{
   display: flex;
   align-items: center;
   float: right;
-  margin-left: 300px;
+  margin-left: 500px;
   margin-right: 50px;
-  
-
 }
 ul {
   list-style:none;
+  display: flex;
+  float: left;
 }
 ul li{
   padding:0 15px; 
   border-left: 1px solid #e2e2e2;
   float: left;
+  
 }
 ul li a{
   text-decoration: none;
@@ -50,7 +54,7 @@ ul li a{
 }
 .logo{
   display: flex;
- margin: 0 100px;
+  margin: 0 100px;
 }
 .z{
   float:right;
@@ -68,6 +72,7 @@ ul li a{
   float: left;
   display: flex;
   align-items: center;
+  margin-left: 200px;
 
 }
 .text-base{
@@ -93,6 +98,7 @@ margin: 0 430px;
 margin-top: 220px;
 max-width: 1400px;
 z-index: 20;
+overflow: auto;
 position: relative;
 
 }
@@ -100,9 +106,8 @@ position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: relative;
   max-width: 100%;
-  margin: 12px;
+  margin:auto;
   border-bottom: 1px solid;
 }
 .listitem{

@@ -27,7 +27,7 @@ function App() {
           </div>
 
           <nav>
-            <div>
+            
               <ul>
                 <li><a>بیشتر</a></li>
                 <li><Link to={'/accommodation'}>ویلا و اقامتگاه</Link></li>
@@ -37,7 +37,6 @@ function App() {
                 <li><Link to={'/train-ticket'}>قطار</Link></li>
                 <li><Link to={'/'}>پرواز</Link></li>
               </ul>
-            </div>
 
             <div className='logo'>
               <div className='flex'>

@@ -178,7 +178,7 @@ const DomesticFlight = () =>{
 
                    <div className="mt-6 text-center bg-white rounded-xl w-full border-current mb-20" style={{display:'flex',justifyContent:'space-between',height:'320px'}}>
                       <div className="background rounded-l-lg">
-                          <img className="mt-10" src="https://cdn.alibaba.ir/h/desktop/assets/images/app-mobile/app-mobile@1x.webp-09aa7fed.webp"></img>
+                          <img className="mt-10"style={{marginLeft:'125px'}} src="https://cdn.alibaba.ir/h/desktop/assets/images/app-mobile/app-mobile@1x.webp-09aa7fed.webp"></img>
                       </div>
                       <div className="textbox">
                           <h1 className="text-xl font-bold py-3">دانلود اپلیکیشن علی‌بابا</h1>
