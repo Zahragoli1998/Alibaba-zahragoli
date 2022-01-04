@@ -12,7 +12,9 @@ import phoneLogo from '../img/svgexport-17.svg';
 import alibabaplusLogo from '../img/alibabaplus.svg';
 import { PictureList } from "./PictureList";
 import iosLogo from '../img/logoios.png';
-import androidLogo from '../img/logoandroid.png'
+import androidLogo from '../img/logoandroid.png';
+import questionLogo from '../img/svgexport-19.svg';
+import expandMoreLogo from '../img/svgexport-23.svg'
 
 
 const DomesticFlight = () =>{
@@ -33,7 +35,7 @@ const DomesticFlight = () =>{
                 </div>
             </div>
 
-            <div>
+            <div className="main-list">
                 <div className="n ">
                     <div className="mt-6 text-center bg-white rounded-xl w-full border-current" style={{padding:'0px 50px',maxWidth:'100%',paddingTop:'8px'}} >
                         <div className="list">
@@ -190,7 +192,81 @@ const DomesticFlight = () =>{
                               <img style={{width:'25px',height:'25px'}} src={androidLogo}></img>
                           </div>
                       </div>
-                      <div></div>
+                   </div>
+
+
+                   <div>
+                       <h2 className="text-right font-bold text-2xl">پرسش های شما</h2>
+                    <div className="w-full" style={{height:'auto'}}>
+                        <button className="mt-6 text-center bg-white rounded-xl w-full border-current" style={{height:'auto'}}>
+                            <div className="p-5" style={{display:'flex',flexDirection:'row-reverse',justifyContent:'space-between'}}>
+                                <div style={{display:'flex'}}>
+                                    <p className="text-xl" style={{color:'#4B5259',maxWidth:"100%"}}>چند روز قبل از پرواز، بلیط هواپیما را بخریم؟</p>
+                                    <img className="rounded-full ml-3"style={{backgroundColor:'#e8f9fc'}} src={questionLogo}/>
+                                </div>
+                            <button>
+                                <img src={expandMoreLogo}/>
+                            </button>
+                            </div>
+                            <div className="hidden">
+                                <p  className="text-xl text-right" style={{color:'#4B5259',maxWidth:"100%"}}>امکان رزرو بلیط هواپیما از ماه‌ها قبل وجود دارد. اما گاهی اوقات قیمت بلیط هواپیما در روزهای نزدیک به پرواز ارزان‌تر می‌شود. بنابراین در صورتی که شرایطتان اجازه می‌دهد، رزرو آنلاین بلیط هواپیما را به روزهای نزدیک پرواز موکول کنید. البته اگر قصد سفر در ایام پرسفر نظیر تعطیلات را دارید، باید هر چه زودتر رزرو بلیط هواپیما را انجام دهید.
+                                </p>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div className="w-full" style={{height:'auto'}}>
+                        <button className="mt-6 text-center bg-white rounded-xl w-full border-current" style={{height:'auto'}}>
+                            <div className="p-5" style={{display:'flex',flexDirection:'row-reverse',justifyContent:'space-between'}}>
+                                <div style={{display:'flex'}}>
+                                    <p className="text-xl" style={{color:'#4B5259',maxWidth:"100%"}}>در هر پرواز، میزان بار مجاز چقدر است؟</p>
+                                    <img className="rounded-full ml-3"style={{backgroundColor:'#e8f9fc'}} src={questionLogo}/>
+                                </div>
+                            <button>
+                                <img src={expandMoreLogo}/>
+                            </button>
+                            </div>
+                            <div className="hidden">
+                                <p  className="text-xl text-right" style={{color:'#4B5259',maxWidth:"100%"}}>میزان مجاز بار به کلاس پرواز و کلاس نرخی بلیط بستگی دارد. هنگام خرید آنلاین بلیط هواپیما می‌توانید میزان بار مجاز را در اطلاعات بلیط ببینید. طبیعی است که اگر میزان بارتان بیش از حد مجاز باشد، باید جریمه پرداخت کنید.</p>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div className="w-full" style={{height:'auto'}}>
+                        <button className="mt-6 text-center bg-white rounded-xl w-full border-current" style={{height:'auto'}}>
+                            <div className="p-5" style={{display:'flex',flexDirection:'row-reverse',justifyContent:'space-between'}}>
+                                <div style={{display:'flex'}}>
+                                    <p className="text-xl" style={{color:'#4B5259',maxWidth:"100%"}}>نرخ بلیط هواپیما برای نوزادان و کودکان زیر ۱۲ سال چگونه است؟</p>
+                                    <img className="rounded-full ml-3"style={{backgroundColor:'#e8f9fc'}} src={questionLogo}/>
+                                </div>
+                            <button>
+                                <img src={expandMoreLogo}/>
+                            </button>
+                            </div>
+                            <div className="hidden">
+                                <p  className="text-xl text-right" style={{color:'#4B5259',maxWidth:"100%"}}>این نرخ به کلاس پرواز و کلاس نرخی بستگی دارد. اما عموما 50 تا 75 درصد قیمت بلیط بزرگسالان است. قیمت بلیط هواپیما برای نوزادان (تا 2 سال) در بیشتر موارد 10 درصد بلیط بزرگسالان است. هنگام تهیه بلیط هواپیما به این نکته توجه داشته باشید.</p>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div className="w-full mb-24" style={{height:'auto'}}>
+                        <button className="mt-6 text-center bg-white rounded-xl w-full border-current" style={{height:'auto'}}>
+                            <div className="p-5" style={{display:'flex',flexDirection:'row-reverse',justifyContent:'space-between'}}>
+                                <div style={{display:'flex'}}>
+                                    <p className="text-xl" style={{color:'#4B5259',maxWidth:"100%"}}>رزرو آنلاین بلیط هواپیما هزینه بیشتری از خرید حضوری دارد؟</p>
+                                    <img className="rounded-full ml-3"style={{backgroundColor:'#e8f9fc'}} src={questionLogo}/>
+                                </div>
+                            <button>
+                                <img src={expandMoreLogo}/>
+                            </button>
+                            </div>
+                            <div className="hidden">
+                                <p  className="text-xl text-right" style={{color:'#4B5259',maxWidth:"100%"}}>خیر؛ زمانی که از یک سایت معتبر خرید بلیط هواپیما، اقدام به خرید می‌کنید، نه تنها هزینه بیشتری پرداخت نمی‌کنید، حتی ممکن است تخفیف هم بگیرید. ضمنا با خرید آنلاین بلیط هواپیما از پشتیبانی نیز برخودار هستید.</p>
+                            </div>
+                        </button>
+                    </div>
+
+
                    </div>
 
                 </div>

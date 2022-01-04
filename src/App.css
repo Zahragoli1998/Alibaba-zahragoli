@@ -72,7 +72,7 @@ ul li a{
   float: left;
   display: flex;
   align-items: center;
-  margin-left: 200px;
+  margin-right: 200px;
 
 }
 .text-base{
@@ -153,4 +153,70 @@ position: relative;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
+}
+.main-list{
+  display: flex;
+  justify-content: center;
+  
+}
+.footer{
+  border-top: solid 1px rgb(212, 211, 211) ;
+  background-color: #fff;
+  color: #2b2f33;
+  height:auto;
+  margin-top: auto;
+}
+.footer-content{
+  margin: 0 392px;
+  padding: 8px 16px 0px;
+}
+.footer-list{
+  list-style: none;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding:32px 0 ;
+  margin: 0 100px;
+}
+.footer-listitem{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.downloadBox{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.downloadBox-main{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.directlyDownloadBox{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+.directlyDownloadBox a {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 5px 16px;
+  border: 1px solid rgb(207, 211, 214) ;
+  border-radius: 10px ;
+  margin-left: 10px;
+  height: 40px ;
+  font-weight: bold;
+}
+.footer-nav{
+  text-align: right;
+  margin: 10px;
+}
+.footer-nav div{
+  list-style: none;
+  
+}
+.footer-nav div li{
+  margin: 5px;
 }
