@@ -8,6 +8,14 @@ import MyketLogo from '../img/Myket.svg'
 import sibappLogo from '../img/Sibapp.svg'
 import downloadLogo from '../img/svgexport-22.svg'
 import alibabaLogo from '../img/Alibaba Logo.svg'
+import RightsImage from '../img/حقوق مسافر.svg'
+import OrganizationImage from '../img/سازمان هواپیمایی کشوری.svg'
+import TelegramLogo from '../img/Telegram logo.svg'
+import TwitterLogo from '../img/Twitter logo.svg'
+import youtubeLogo from '../img/youtube logo.svg'
+import AparatLogo from '../img/Aparat logo.svg'
+import InstagramLogo from '../img/Instagram logo.svg'
+import LinkedinLogo from '../img/Linkedin logo.svg'
 
 const Footer = () =>{
 
@@ -73,7 +81,7 @@ const Footer = () =>{
           </div>
           <hr class=" mt-6"></hr>
 
-          <div style={{display:"grid",gridTemplateColumns:'1fr 1fr 1fr 3fr',justifyContent:'center'}}> 
+          <div style={{display:'flex',flexDirection:'row-reverse' ,justifyContent:'center'}}> 
               <div className='footer-nav'>
                   <h3 className="mb-5 text-xl">علی‌بابا</h3>
                   <div>
@@ -102,8 +110,8 @@ const Footer = () =>{
                       <li><a href="https://www.alibaba.ir/jobs"></a>فرصت‌های شغلی</li>
                   </div>
               </div>
-              <div>
-                  <img src={alibabaLogo} className="w-20 h-10"/>
+              <div style={{flex:'2'}}> 
+                  <img src={alibabaLogo} className="w-30 h-10 my-5"/>
                   <div>
                       <p>
                           <a dir="ltr" class="font-medium mr-3" href="tel:02143900000" data-v-37e475cc="">۰۲۱ - ۴۳۹۰۰۰۰۰ </a>
@@ -113,37 +121,54 @@ const Footer = () =>{
                       </p>
                       <p>دفتر فروش: قیطریه، بلوار اندرزگو، نبش کوچه‌ی بلوچ شمالی، پلاک ۴</p>
                   </div>
-                  <div>
-                      <li>
-                          <a href="https://ecunion.ir/verify/alibaba.ir?token=45162255b6952bb8af5b">
-                              <img/>
+                  <div className="list-none mt-20">
+                      <li className="inline-block">
+                          <a className="footer-card" href="https://ecunion.ir/verify/alibaba.ir?token=45162255b6952bb8af5b">
+                              <img src="https://cdn.alibaba.ir/h/desktop/assets/images/footer/ecunion.png-8b792f56.png"/>
                           </a>
                       </li>
-                      <li>
-                          <a href="https://logo.samandehi.ir/Verify.aspx?id=33643&p=xlaoxlaogvkaaodsxlao">
-                              <img/>
+                      <li className="inline-block">
+                          <a className="footer-card" href="https://logo.samandehi.ir/Verify.aspx?id=33643&p=xlaoxlaogvkaaodsxlao">
+                              <img src="https://cdn.alibaba.ir/h/desktop/assets/images/footer/samandehi.png-6e2b448a.png"/>
                           </a>
                       </li>
-                      <li>
-                          <a href="https://www.cao.ir/paxrights">
-                              <img/>
+                      <li className="inline-block">
+                          <a className="footer-card" href="https://www.cao.ir/paxrights">
+                              <img src={RightsImage}/>
                           </a>
                       </li>
-                      <li>
-                          <a href="http://www.aira.ir/">
-                              <img/>
+                      <li className="inline-block">
+                          <a className="footer-card" href="http://www.aira.ir/">
+                              <img src="https://cdn.alibaba.ir/h/desktop/assets/images/footer/aira.png-682b7c43.png"/>
                           </a>
                       </li>
-                      <li>
-                          <a href="https://www.cao.ir/home">
-                              <img/>
+                      <li className="inline-block">
+                          <a className="footer-card" href="https://www.cao.ir/home">
+                              <img src={OrganizationImage}/>
                           </a>
                       </li>
                   </div>
 
               </div>
           </div>
-
+          <hr class=" mt-6"></hr>
+          <div className="p-5"  style={{display:'flex',flexDirection:'row-reverse',justifyContent:'space-between'}}>
+              <p className="text-sm text-gray-400">کلیه حقوق این سرویس (وب‌سایت و اپلیکیشن‌های موبایل) محفوظ و متعلق به شرکت سفرهای علی‌بابا می‌باشد. (نسخه 1.27.1)</p>
+              <div style={{display:'flex'}}>
+                  <a className="px-5" href="https://www.linkedin.com/company/alibaba-travels">
+                      <img  src={LinkedinLogo}/></a>
+                  <a className="px-5" href="https://instagram.com/alibaba_travels">
+                      <img  src={InstagramLogo}/></a>
+                  <a className="px-5" href="https://www.aparat.com/alibaba_travels">
+                      <img  src={AparatLogo}/></a>
+                  <a className="px-5" href="https://twitter.com/alibaba_travels">
+                      <img  src={TwitterLogo}/></a>
+                  <a className="px-5" href="https://www.youtube.com/channel/UChN_55cq3XLPUUv7RRzlNgQ">
+                      <img  src={youtubeLogo}/></a>
+                  <a className="px-5" href="https://t.me/AlibabaTravels">
+                      <img  src={TelegramLogo}/></a>
+              </div>
+          </div>
         </div>
 
       </div>

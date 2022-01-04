@@ -167,7 +167,7 @@ position: relative;
   margin-top: auto;
 }
 .footer-content{
-  margin: 0 392px;
+  margin: 0 492px;
   padding: 8px 16px 0px;
 }
 .footer-list{
@@ -176,7 +176,6 @@ position: relative;
   flex-direction: row-reverse;
   justify-content: space-between;
   padding:32px 0 ;
-  margin: 0 100px;
 }
 .footer-listitem{
   display: flex;
@@ -219,4 +218,18 @@ position: relative;
 }
 .footer-nav div li{
   margin: 5px;
+}
+.footer-card{
+  margin-right: .5rem;
+  display: flex;
+  align-items: center;
+  font-size: .875rem;
+  font-weight: 700;
+  line-height: 2;
+  border: 1px solid rgb(207, 211, 214) ;
+  border-radius: 8px;
+}
+.footer-card img{
+  width:70px ;
+  height:70px ;
 }
